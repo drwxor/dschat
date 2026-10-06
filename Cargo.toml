@@ -1,0 +1,23 @@
+[package]
+name = "dschat"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = {
+    version = "4.6.7",
+    features = ["derive"]
+}
+rustyline = "18.0.1"
+tokio = {
+    version = "1.53.2",
+    features = ["full"]
+}
+
+[[bin]]
+name = "dchat"
+path = "src/bin/dchat.rs"
+
+[[bin]]
+name = "dshat"
+path = "src/bin/dshat.rs"
